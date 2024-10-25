@@ -12,7 +12,10 @@ To configure SSH to connect to a server without being prompted for a password, y
 1. **Generate an SSH key pair** (if you don’t already have one):
 
    ```bash
-   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+   //github
+   ssh-keygen -t ed25519 -C daram3118.gmail.com
+
+   ssh-keygen -t rsa -b 4096 -C daram3118.gmail.com
    ```
 
    - This command creates a new SSH key using the RSA algorithm with a 4096-bit key size.
