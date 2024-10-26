@@ -24,19 +24,19 @@ To create an SSL certificate for a domain on a VPS, you can use **Let's Encrypt*
      
      sudo certbot --nginx -d api.studioimmigrato.com
 
-IMPORTANT NOTES:
- - Congratulations! Your certificate and chain have been saved at:
-   /etc/letsencrypt/live/api.studioimmigrato.com/fullchain.pem
-   Your key file has been saved at:
-   /etc/letsencrypt/live/api.studioimmigrato.com/privkey.pem
-   Your cert will expire on 2025-01-24. To obtain a new or tweaked
-   version of this certificate in the future, simply run certbot again
-   with the "certonly" option. To non-interactively renew *all* of
-   your certificates, run "certbot renew"
- - If you like Certbot, please consider supporting our work by:
-
-   Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
-   Donating to EFF:                    https://eff.org/donate-le
+      IMPORTANT NOTES:
+       - Congratulations! Your certificate and chain have been saved at:
+         /etc/letsencrypt/live/api.studioimmigrato.com/fullchain.pem
+         Your key file has been saved at:
+         /etc/letsencrypt/live/api.studioimmigrato.com/privkey.pem
+         Your cert will expire on 2025-01-24. To obtain a new or tweaked
+         version of this certificate in the future, simply run certbot again
+         with the "certonly" option. To non-interactively renew *all* of
+         your certificates, run "certbot renew"
+       - If you like Certbot, please consider supporting our work by:
+      
+         Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+         Donating to EFF:                    https://eff.org/donate-le
      ```
    - Replace `your_domain` with your actual domain name.
    - Certbot will prompt you to provide an email address and agree to the terms of service.
