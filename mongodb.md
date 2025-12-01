@@ -1,4 +1,21 @@
 ## Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-125-generic x86_64)
+# Install prerequisites
+sudo apt update
+sudo apt install -y wget gnupg
+
+# Import MongoDB GPG key
+wget -qO- https://www.mongodb.org/static/pgp/server-7.0.asc | sudo tee /etc/apt/trusted.gpg.d/mongodb.asc
+
+# Add MongoDB 7.0 repository for Ubuntu 22.04 (Jammy)
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+
+# Install MongoDB
+sudo apt update
+sudo apt install -y mongodb-org
+
+# Start MongoDB
+sudo systemctl start mongod
+sudo systemctl enable mongod
 
 ### Step 1: Check MongoDB's Service Status
 First, verify whether the MongoDB service is installed and recognized by systemd:
