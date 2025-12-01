@@ -93,3 +93,20 @@ sudo systemctl status mongod
 
 3. **Reinstall MongoDB**  
    If the service is not recognized, you may need to reinstall MongoDB.
+
+## Backup
+ ```bash
+mongodump --host 127.0.0.1 --port 27017 \
+          --db csodb \
+          --username admin --password sajadweb1368 \
+          --authenticationDatabase admin \
+          --out /home/backup
+ ```
+ ## Store
+ ```bash
+          mongorestore --host 127.0.0.1 --port 20025 \
+             --db csodb \
+             --username admin --password sajadweb1368 \
+             --authenticationDatabase admin \
+             /home/backup/csodb
+ ```
