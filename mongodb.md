@@ -98,7 +98,7 @@ sudo systemctl status mongod
  ```bash
 mongodump --host 127.0.0.1 --port 27017 \
           --db csodb \
-          --username admin --password sajadweb1368 \
+          --username admin --password 123444 \
           --authenticationDatabase admin \
           --out /home/backup
  ```
@@ -106,7 +106,7 @@ mongodump --host 127.0.0.1 --port 27017 \
  ```bash
           mongorestore --host 127.0.0.1 --port 20025 \
              --db csodb \
-             --username admin --password sajadweb1368 \
+             --username admin --password 123444 \
              --authenticationDatabase admin \
              /home/backup/csodb
  ```
